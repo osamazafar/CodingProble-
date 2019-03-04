@@ -8,3 +8,4 @@ gradle assemble
 gradle check
 
 script: bash run_selinium_test.sh
+
