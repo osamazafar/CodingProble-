@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/Users/osama/eclipse-workspace"/>
+		<item value="/Users/osama/eclipse-workspace/dialpad-selinium-module"/>
+		<item value="/Users/osama/Downloads/eclipse-workspace/dialpad-selinium-automation"/>
+		<item value="/Users/osama/Downloads/eclipse-workspace"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+</section>
