@@ -16,8 +16,8 @@ java Addone_2
 
 java AddtwoNumbers
 
-java Closet3sum
+java Closest3sum
 
-java divible
+java divisible
 
 
