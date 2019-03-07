@@ -22,6 +22,6 @@ java divisible
 
 java Find_Min
 
-java FindTheDiffernce
+java FindTheDifference
 
-java FindThirdMax
+java FindThirdMAX
