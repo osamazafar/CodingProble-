@@ -20,4 +20,8 @@ java Closest3sum
 
 java divisible
 
+java Find_Min
 
+java FindTheDiffernce
+
+java FindThirdMax
