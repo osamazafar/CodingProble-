@@ -25,3 +25,9 @@ java Find_Min
 java FindTheDifference
 
 java FindThirdMAX
+
+java FirstMissing
+
+java JumpArray
+
+java MaximumUnsortedArray
