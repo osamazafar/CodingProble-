@@ -34,4 +34,4 @@ java MaximumUnsortedArray
 
 java MaxProduct
 
-java MergeTwoSortedArray
+java MergeTwoSortedList
