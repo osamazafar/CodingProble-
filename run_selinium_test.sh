@@ -31,3 +31,7 @@ java FirstMissing
 java JumpArray
 
 java MaximumUnsortedArray
+
+java MaxProduct
+
+java MergeTwoSortedArray
