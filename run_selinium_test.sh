@@ -35,3 +35,7 @@ java MaximumUnsortedArray
 java MaxProduct
 
 java MergeTwoSortedList
+
+java MinimumPathSum
+
+
