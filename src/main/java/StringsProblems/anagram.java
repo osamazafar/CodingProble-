@@ -4,35 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 public class anagram
 {
-	public static int Anagram(String[] s)
-	{
-		
-		HashMap<String, Integer> map = new HashMap<String, Integer>();
-		for(int i = 0; i < s.length; i++)
-		{
-			String ss = s[i];
-			char [] c = ss.toCharArray();
-			Arrays.sort(c);
-			String sorted = String.valueOf(c);
-			if(map.containsKey(sorted))
-			{
-				map.put(sorted, map.get(sorted)+1);
-			}
-			else
-				map.put(sorted, 1);
-		}
-		
-		for (Map.Entry<String, Integer> entry : map.entrySet()) {
-	         System.out.println("value: "+entry.getKey()+" :" +"   key: "+ entry.getValue());
-	             
-		 }
-		return 1;
-		
-	}
+	
 	
 	
 	public static ArrayList<ArrayList<String>> GroupAnagram(String [] str)
@@ -78,7 +54,6 @@ public class anagram
 	public static void main(String[] args) throws InterruptedException
 	{
 		String [] s = new String[] {"eat","tea","bnt","tnb","ate","efg" };
-		anagram.Anagram(s);
 		System.out.println(anagram.GroupAnagram(s));
 		System.out.println(anagram.ga(s));
 	
