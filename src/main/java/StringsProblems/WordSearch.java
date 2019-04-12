@@ -28,7 +28,7 @@ public class WordSearch {
 			return false;
 		char c = a[i][j];
 		a[i][j] = 1;
-		boolean res = helper(a, word,  i+1, j, index+ 1) ||
+		boolean res =	helper(a, word,  i+1, j, index+ 1) ||
 						helper(a, word,  i-1, j, index+ 1) ||
 						helper(a, word,  i, j+1, index+ 1) ||
 						helper(a, word,  i, j-1, index+ 1);
