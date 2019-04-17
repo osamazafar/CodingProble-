@@ -39,21 +39,24 @@ public class SaadiTest {
 			}
 			else
 			{
-		HashMap<Character, Integer> map = new HashMap<Character, Integer>(); 
-		for(int i = 0; i< ss.length(); i++)
-		{
-			if(map.containsKey(ss.charAt(i)))
-			{
-				map.put(ss.charAt(i), map.get(ss.charAt(i))+1);
-			}
-			else
-				map.put(ss.charAt(i), 1);
-		}
+		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 		
-		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-	         if(entry.getValue() == 1)
-	             count++;
-		 }
+			for(int i = 0; i< ss.length(); i++)
+				{
+				if(map.containsKey(ss.charAt(i)))
+					{
+						map.put(ss.charAt(i), map.get(ss.charAt(i))+1);
+					}
+				else
+						map.put(ss.charAt(i), 1);
+				}
+		
+			for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+				if(entry.getValue() == 1)
+					count++;
+				}
+			
+			
 		if(count == 0 )
 		result.add(count);
 		else
@@ -61,15 +64,16 @@ public class SaadiTest {
 			count /=2;
 			result.add(count);
 		}
+		
 		count = 0;
-		}
-		}
+			}///else closed
+		} //for  1st 
 		return result;
 		
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		String[] arr = new String [] {"act", "taf", "acf", "abc", "efg"};
 		String [] brr = new String [] {"acts", "aft", "acd", "efa", "awv"};
 		List<String> a = new ArrayList<String>();
