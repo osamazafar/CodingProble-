@@ -11,6 +11,7 @@ public class anagram
 	
 	
 	
+	
 	public static ArrayList<ArrayList<String>> GroupAnagram(String [] str)
 	{
 		ArrayList<ArrayList<String>> result = new ArrayList<ArrayList<String>>();
@@ -26,6 +27,7 @@ public class anagram
 			map.put(sorted, temp);
 		}
 		result.addAll(map.values());
+		
 		return result;
 	}
 	
@@ -53,6 +55,7 @@ public class anagram
 	
 	public static void main(String[] args) throws InterruptedException
 	{
+		//System.out.println(ssss);
 		String [] s = new String[] {"eat","tea","bnt","tnb","ate","efg" };
 		System.out.println(anagram.GroupAnagram(s));
 		System.out.println(anagram.ga(s));

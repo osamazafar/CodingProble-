@@ -1,39 +1,44 @@
 package HashMap;
 
-import java.util.HashMap;
-import java.util.Map;
+
 
 public class AsciiDifference
 {
 
 	public static int ascii(String s1, String s2)
 	{
-		HashMap<Character, Integer> map =  new HashMap<Character, Integer>();
-		int asciitotal = 0;
 		
-		String ss = s1+s2;
-		for(int i = 0; i < ss.length(); i++)
+		 int asciitotal = 0;
+		String ss1;
+		String ss2;
+		if(s1.length() > s2.length())
 		{
-			if(map.containsKey(ss.charAt(i)))
-				map.put(ss.charAt(i), map.get(ss.charAt(i))+1);
-			else
-				map.put(ss.charAt(i), 1);
+			ss1 = s1;
+			ss2 = s2;
+		}
+		else
+		{
+			ss1 = s2;
+			ss2 = s1;
 		}
 		
-		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-	         if(entry.getValue() == 1)
-	         {
-	        	 asciitotal += (int) entry.getKey();
-	         }
-		 }
+		for(int i = 0; i < ss1.length(); i++)
+		{
+			 asciitotal += (int) ss1.charAt(i);
+		}
+		for(int i = 0; i < ss2.length(); i++)
+		{
+			 asciitotal -= (int) ss2.charAt(i);
+		}
+			
 		return asciitotal;
 	}
 	
 	
 	public static void main (String [] args) throws InterruptedException
 	{
-		String s1 = "cat";
-		String s2 = "eat";
+		String s1 = "thought";
+		String s2 = "sloughs";
 		System.out.println(AsciiDifference.ascii(s1,s2));
 	}
 	

@@ -26,8 +26,8 @@ public class SaadiTest {
 		{
 			 s1 = s.get(j);
 			 s2 = t.get(j);
-			System.out.println(s1);
-			System.out.println(s2);
+//			System.out.println(s1);
+//			System.out.println(s2);
 			String ss = s1 + s2;
 			int n1 = s1.length();
 			int n2 = s2.length();
@@ -74,7 +74,7 @@ public class SaadiTest {
 
 	public static void main(String[] args) {
 		
-		String[] arr = new String [] {"act", "taf", "acf", "abc", "efg"};
+		String[] arr = new String [] {"act", "taf", "acf", "abc", "efg"};// -1, 0, 1, 2, 3
 		String [] brr = new String [] {"acts", "aft", "acd", "efa", "awv"};
 		List<String> a = new ArrayList<String>();
 		List<String> b = new ArrayList<String>();

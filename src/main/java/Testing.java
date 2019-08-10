@@ -31,7 +31,7 @@ public class Testing {
 	
 	public static void main(String[] args)
 	{
-		int arr [] = new int [] {3,2,1,2,4,7,4}; // [3,2,1,4,7] total = 17
+		int arr [] = new int [] {3,2,1,2,7}; // [3,2,1,4,7] total = 17
 		System.out.println(Testing.test(arr));
 	}
 }

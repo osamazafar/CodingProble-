@@ -13,6 +13,7 @@ public class FirstMissing {
 			xor = xor ^ fullarray[i];
 		}
 		
+		
 		for(int i = 0; i < partialarray.length; i++)
 		{
 			xor = xor ^ partialarray[i];
@@ -79,7 +80,7 @@ public class FirstMissing {
 	
 	public static void main(String [] args) throws InterruptedException
 	{
-		int [] fullarr = new int [] {3,5,2,6,9,12};
+		int [] fullarr = new int [] {5,2,6,9,12,3};
 		int [] partialarr = new int [] {5,2,3,9,12};
 		System.out.println(FirstMissing.firstMissingXor(fullarr, partialarr));
 		System.out.println(FirstMissing.firstMissingCount(fullarr, partialarr));
