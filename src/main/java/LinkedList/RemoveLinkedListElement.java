@@ -12,10 +12,7 @@ public class RemoveLinkedListElement
 			head = head.next;
 		}
 		
-		if(head == null)
-		{
-			return null;
-		}
+	
 		
 		ListNode prev = head;
 		
@@ -37,8 +34,8 @@ public class RemoveLinkedListElement
 		
 		while(head.val == val)
 			head = head.next;
-		if(head == null)
-			return null;
+//		if(head == null)
+//			return null;
 		ListNode prev = head;
 		
 		while(prev.next != null)

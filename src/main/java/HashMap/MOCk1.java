@@ -47,14 +47,14 @@ public class MOCk1
 	
 	public static void main(String[] args) throws InterruptedException
 	{
-//		String s = "ABCABC";
-//		String t = "ABC";
+		String s = "ABCABC";
+		String t = "ABC";
 		
 //		String s = "ABABAB";
 //		String t = "AB";
 		
-		String s = "LEET";
-		String t = "CODE";
+//		String s = "LEET";
+//		String t = "CODE";
 		System.out.println(MOCk1.test(s, t));
 	}
 }

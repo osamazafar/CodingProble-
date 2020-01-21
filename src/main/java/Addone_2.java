@@ -1,11 +1,7 @@
 
 import java.util.Arrays;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
  class Addone_2 {
-	private static final Logger _logger = LoggerFactory.getLogger(Addone_2.class);
 
 	public int [] Addone2(int [] a)
 	{
@@ -24,7 +20,6 @@ import org.slf4j.LoggerFactory;
 		if(sum ==1)
 		{
 			result[0]=1;
-			_logger.info("hello");
 			return result;
 		}
 		System.out.print(Arrays.copyOfRange(result, 1, result.length));

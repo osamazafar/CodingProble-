@@ -9,9 +9,9 @@ public class RepeatedElement {
 		if(n == 0)
 			return count;
 		
-		if(a[n] == target && n>=0)
+		if(a[n] == target)
 		{
-			++count;
+			count++;
 		}
 		
 		return repeat(a, n-1, target, count);

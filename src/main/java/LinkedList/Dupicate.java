@@ -41,18 +41,22 @@ public class Dupicate
 	{
 		if(head == null)
 			return null;
-		ListNode node = head;
-		while(node != null)
+		ListNode dummy = new ListNode(0);
+		ListNode node = dummy;
+		while(head != null)
 		{
-			if(node.next == null)
+			if(head.next == null)
 				break;
-			if(node.val == node.next.val)
+			if(head.val == head.next.val)
 			{
-				node.next = node.next.next;
+				node.next = new ListNode(head.val);
+				node = node.next;
+				head.next = head.next.next;
 			}
-			node = node.next;
+			head = head.next;
+			
 		}
-		return head.next;
+		return dummy.next;
 	}
 	
 	

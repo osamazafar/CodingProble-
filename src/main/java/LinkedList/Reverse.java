@@ -3,7 +3,7 @@ package LinkedList;
 
 public class Reverse 
 {
-	
+	ListNode head;
 	
           
 	
@@ -44,12 +44,10 @@ public class Reverse
 	        
 	    }
 
-	
-	 //Test function
+
 	 public static ListNode reverse(ListNode list)
 	 {
 		 ListNode prev = null;
-		 
 		 while(list != null)
 		 {
 			 ListNode next = list.next;
@@ -59,6 +57,7 @@ public class Reverse
 		 }
 		 return prev;
 	 }
+	 
 	 
 	 public static ListNode rev(ListNode head)
 	 {
@@ -89,7 +88,7 @@ public class Reverse
         list = insert(list, 5); 
         printList(list);
         printList(reverse(list));
-        printList(rev(list));
+        //printList(rev(list));
        
 	}
 }

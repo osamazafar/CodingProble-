@@ -38,11 +38,42 @@ public class Duplicatell
 	}
 	
 	
+//	public static ListNode duplicate2(ListNode head)
+//	{
+//		ListNode dummy = new ListNode(0);
+//		dummy.next = head;
+//	
+//		ListNode prev = dummy;
+//		ListNode node = prev.next;
+//		
+//		while(node != null)
+//		{
+//			int count = 0;
+//			while(node.next != null && node.val == node.next.val)
+//			{
+//				count++;
+//				node = node.next;
+//			}
+//			
+//			if(count == 0)
+//			{
+//				prev = prev.next;
+//			}
+//			else
+//			{
+//				prev.next = node.next;
+//			}
+//			
+//			node = node.next;
+//		}
+//		
+//		return dummy.next;
+//	}
+	
 	public static ListNode duplicate2(ListNode head)
 	{
 		ListNode dummy = new ListNode(0);
 		dummy.next = head;
-	
 		ListNode prev = dummy;
 		ListNode node = prev.next;
 		
@@ -51,28 +82,30 @@ public class Duplicatell
 			int count = 0;
 			while(node.next != null && node.val == node.next.val)
 			{
-				count++;
 				node = node.next;
+				count++;
 			}
 			
 			if(count == 0)
-			{
 				prev = prev.next;
-			}
 			else
 			{
 				prev.next = node.next;
 			}
-			
 			node = node.next;
 		}
-		
 		return dummy.next;
+		
+		
 	}
 
 	public static void main(String[] args)
 	{
 		ListNode list = new ListNode(0);
+		Duplicatell.insert(list, 1);
+		Duplicatell.insert(list, 1);
+		Duplicatell.insert(list, 1);
+		Duplicatell.insert(list, 1);
 		Duplicatell.insert(list, 1);
 		Duplicatell.insert(list, 2);
 		Duplicatell.insert(list, 2);

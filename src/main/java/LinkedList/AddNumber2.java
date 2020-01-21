@@ -53,18 +53,19 @@ public class AddNumber2
 	public static void main(String[] args)
 	{
 		
-		ListNode l1 = new ListNode(7);
-		ListNode l2 = new ListNode(5);
+		ListNode l1 = new ListNode(6);
+		ListNode l2 = new ListNode(4);
 		
 		
-		MergeTwoList.insert(l1, 2);
 		MergeTwoList.insert(l1, 4);
-		MergeTwoList.insert(l1, 3);
+		MergeTwoList.insert(l1, 9);
+		MergeTwoList.insert(l1, 7);
+		MergeTwoList.insert(l1, 8);
 		MergeTwoList.printList(l1);
 		
 		
-		MergeTwoList.insert(l2, 6);
-		MergeTwoList.insert(l2, 4);
+		MergeTwoList.insert(l2, 3);
+		MergeTwoList.insert(l2, 2);
 		//MergeTwoList.insert(l2, 2);
 		MergeTwoList.printList(l2);
 		

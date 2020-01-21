@@ -23,6 +23,7 @@ public class KthFrequentElement
 				map.put(i, 1);
 		}
 		
+		System.out.println(map);
 		for(Map.Entry<Integer, Integer> e : map.entrySet())
 		{
 			System.out.println(e.getValue());
@@ -33,9 +34,15 @@ public class KthFrequentElement
 		
 		for(Map.Entry<Integer, Integer> e : map.entrySet())
 		{
-			pq.offer(e.getValue());
+			if(pq.size() < k)
+			{
+				pq.offer(e.getValue());
+			}
+			else
+				pq.poll();
+	
 		}
-		
+		System.out.println(pq);
 	
 		return result;
 	}
@@ -53,7 +60,7 @@ public class KthFrequentElement
 	
 	public static void main(String[] args) throws InterruptedException
 	{	
-		int arr [] = new int [] {1,1,3,2,6,1,6,2,6};
+		int arr [] = new int [] {1,3,2,6,1,6,2,6,7,7,7,7,8,8,8,8,8};
 		int k = 2;
 		System.out.println(KthFrequentElement.topKFrequent(arr, k));
 	}
