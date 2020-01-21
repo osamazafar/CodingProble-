@@ -7,7 +7,7 @@ public class Subsets {
 	public ArrayList<ArrayList<Integer>> sets(int [] a)
 	{
 		ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
-		result.add(new ArrayList<Integer>());
+		//result.add(new ArrayList<Integer>());
 		if(a.length == 0)
 		{
 			return result;

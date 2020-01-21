@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class Addone_2 {
+ class Addone_2 {
 
 	public int [] Addone2(int [] a)
 	{
@@ -29,6 +29,7 @@ public class Addone_2 {
 	public static void main(String[] args)
 	{
 		int [] a = new int [] {0, 0, 0 ,9,9,9,9};
+		
 		Addone_2 ob1 = new Addone_2();
 		System.out.println(ob1.Addone2(a));
 	

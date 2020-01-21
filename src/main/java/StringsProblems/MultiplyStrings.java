@@ -19,7 +19,7 @@ public class MultiplyStrings {
 				 int p1 = i+j;
 				 int p2 = i+j+1;
 				 int sum = mul + pos[p2];
-				 pos[p1] = sum /10;
+				 pos[p1] += sum /10;
 				 pos[p2] = sum % 10;
 			}
 		}
@@ -37,8 +37,8 @@ public class MultiplyStrings {
 	
 	public static void main(String[] args) throws InterruptedException
 	{
-		String A = "12";
-		String B = "20";
+		String A = "244";
+		String B = "77";
 		System.out.println(MultiplyStrings.mul(A, B));
 	}
 }

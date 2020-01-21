@@ -1,0 +1,11 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+services:
+  - docker
+
+
+script: bash run_selinium_test.sh
+

@@ -1,6 +1,17 @@
 package com.backtracking.dfs;
 import java.util.ArrayList;
 
+/*
+ * 
+ *  
+ *  Points to keep in mind before solving problem
+ * The i should start from 1 as given in problem
+ * And should keep <= n 
+ * k is the length of subarrays we are generating
+ * 
+ * 
+ * */
+
 public class Combination {
 
 	
@@ -31,7 +42,7 @@ public class Combination {
 	public static void main(String[] args) throws InterruptedException
 	{
 		int n = 4; 
-		int k = 2;
+		int k = 3;
 		System.out.println(Combination.combinationOne(n, k));
 	}
 }
